@@ -71,13 +71,13 @@ eyJuYW1lIjoiSkJOUloifQ.ZZVJMg.ZPGcSUBQVYq5zVgSsVq-_4eFaaM
 With secret key:
 
 ```
-$ python{2,3} flask_session_cookie_manager{2,3}.py decode -c 'eyJudW1iZXIiOnsiIGIiOiJNekkyTkRFd01ETXhOVEExIn0sInVzZXJuYW1lIjp7IiBiIjoiWVdSdGFXND0ifX0.DE2iRA.ig5KSlnmsDH4uhDpmsFRPupB5Vw' -s '.{y]tR&sp&77RdO~u3@XAh#TalD@Oh~yOF_51H(QV};K|ghT^d'
-{u'username': 'admin', u'number': '326410031505'}
+$ python flask_session_cookie_manager.py decode -s "JBNRZ" -c "eyJuYW1lIjoiSkJOUloifQ.ZZVJMg.ZPGcSUBQVYq5zVgSsVq-_4eFaaM"
+{'name': 'JBNRZ'}
 ```
 
 Without secret key (less pretty output):
 
 ```
-$ python flask_session_cookie_manager.py decode -s "JBNRZ" -c "eyJuYW1lIjoiSkJOUloifQ.ZZVJMg.ZPGcSUBQVYq5zVgSsVq-_4eFaaM"
-{'name': 'JBNRZ'}
+$ python flask_session_cookie_manager.py decode -c "eyJuYW1lIjoiSkJOUloifQ.ZZVJMg.ZPGcSUBQVYq5zVgSsVq-_4eFaaM"
+b'{"name":"JBNRZ"}'
 ```
